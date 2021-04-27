@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杂技浅尝 on mindLee`s blog</title>
+    <link>https://blog.leetomlee123.top/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/</link>
+    <description>Recent content in 杂技浅尝 on mindLee`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 27 Apr 2021 09:25:28 +0800</lastBuildDate><atom:link href="https://blog.leetomlee123.top/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java程序使用vpn</title>
+      <link>https://blog.leetomlee123.top/2021/book_intro/</link>
+      <pubDate>Tue, 27 Apr 2021 09:25:28 +0800</pubDate>
+      
+      <guid>https://blog.leetomlee123.top/2021/book_intro/</guid>
+      <description>java程序http通过vpn访问不通 通过vpn访问其他公司的内网资源 使用vpn postman 访问接口可以通 但是java代码里面http访问不通 需要加上</description>
+    </item>
+    
+  </channel>
+</rss>
