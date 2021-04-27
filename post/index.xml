@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mindLee`s blog</title>
-    <link>https://leetomlee123.github.io/</link>
-    <description>Recent content on mindLee`s blog</description>
+    <title>Posts on mindLee`s blog</title>
+    <link>https://leetomlee123.github.io/post/</link>
+    <description>Recent content in Posts on mindLee`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Apr 2021 16:23:26 +0800</lastBuildDate><atom:link href="https://leetomlee123.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Apr 2021 16:23:26 +0800</lastBuildDate><atom:link href="https://leetomlee123.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>java程序使用vpn</title>
       <link>https://leetomlee123.github.io/post/first_chapter/</link>
