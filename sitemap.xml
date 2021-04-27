@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.leetomlee123.top/categories/</loc>
+    <loc>https://leetomlee123.github.io/categories/</loc>
     <lastmod>2021-04-27T09:25:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.leetomlee123.top/tags/java/</loc>
+    <loc>https://leetomlee123.github.io/tags/java/</loc>
     <lastmod>2021-04-27T09:25:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.leetomlee123.top/2021/book_intro/</loc>
+    <loc>https://leetomlee123.github.io/2021/book_intro/</loc>
     <lastmod>2021-04-27T09:25:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.leetomlee123.top/</loc>
+    <loc>https://leetomlee123.github.io/</loc>
     <lastmod>2021-04-27T09:25:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.leetomlee123.top/posts/</loc>
+    <loc>https://leetomlee123.github.io/posts/</loc>
     <lastmod>2021-04-27T09:25:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.leetomlee123.top/tags/</loc>
+    <loc>https://leetomlee123.github.io/tags/</loc>
     <lastmod>2021-04-27T09:25:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.leetomlee123.top/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/</loc>
+    <loc>https://leetomlee123.github.io/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/</loc>
     <lastmod>2021-04-27T09:25:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.leetomlee123.top/2021/first-post/</loc>
+    <loc>https://leetomlee123.github.io/2021/first-post/</loc>
     <lastmod>2021-04-26T10:09:53+08:00</lastmod>
   </url>
 </urlset>

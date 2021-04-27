@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mindLee`s blog</title>
-    <link>https://blog.leetomlee123.top/</link>
+    <link>https://leetomlee123.github.io/</link>
     <description>Recent content on mindLee`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Apr 2021 09:25:28 +0800</lastBuildDate><atom:link href="https://blog.leetomlee123.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Apr 2021 09:25:28 +0800</lastBuildDate><atom:link href="https://leetomlee123.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>java程序使用vpn</title>
-      <link>https://blog.leetomlee123.top/2021/book_intro/</link>
+      <link>https://leetomlee123.github.io/2021/book_intro/</link>
       <pubDate>Tue, 27 Apr 2021 09:25:28 +0800</pubDate>
       
-      <guid>https://blog.leetomlee123.top/2021/book_intro/</guid>
+      <guid>https://leetomlee123.github.io/2021/book_intro/</guid>
       <description>java程序http通过vpn访问不通 通过vpn访问其他公司的内网资源 使用vpn postman 访问接口可以通 但是java代码里面http访问不通 需要加上</description>
     </item>
     
     <item>
       <title>First Post</title>
-      <link>https://blog.leetomlee123.top/2021/first-post/</link>
+      <link>https://leetomlee123.github.io/2021/first-post/</link>
       <pubDate>Mon, 26 Apr 2021 10:09:53 +0800</pubDate>
       
-      <guid>https://blog.leetomlee123.top/2021/first-post/</guid>
+      <guid>https://leetomlee123.github.io/2021/first-post/</guid>
       <description></description>
     </item>
     
