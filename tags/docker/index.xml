@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>杂技浅尝 on mindLee`s blog</title>
-    <link>https://leetomlee123.github.io/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/</link>
-    <description>Recent content in 杂技浅尝 on mindLee`s blog</description>
+    <title>docker on mindLee`s blog</title>
+    <link>https://leetomlee123.github.io/tags/docker/</link>
+    <description>Recent content in docker on mindLee`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Apr 2021 16:38:36 +0800</lastBuildDate><atom:link href="https://leetomlee123.github.io/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Apr 2021 16:38:36 +0800</lastBuildDate><atom:link href="https://leetomlee123.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker中日志大小问题</title>
       <link>https://leetomlee123.github.io/post/docker_log/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://leetomlee123.github.io/post/docker_log/</guid>
       <description>服务器磁盘占用接近100%排查 df -h 查看磁盘使用情况 du -h --max-depth=1 / 进一步查看不同文件系统下面的空间使用情况，并通过sort排序，并且只查看前10个数据 ![/images/image-20210427164442140.png) 发现是docker内服务日志没有做出限制 占用大量服务器磁盘 1 2 3 4 5 6 7 # vim /etc/docker/daemon.json { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;http://f613ce8f.m.daocloud.io&amp;#34;], &amp;#34;log-driver&amp;#34;:&amp;#34;json-file&amp;#34;, &amp;#34;log-opts&amp;#34;: {&amp;#34;max-size&amp;#34;:&amp;#34;500m&amp;#34;, &amp;#34;max-file&amp;#34;:&amp;#34;3&amp;#34;} } max-size=500m，意味着一个容器</description>
-    </item>
-    
-    <item>
-      <title>java程序使用vpn</title>
-      <link>https://leetomlee123.github.io/post/first_chapter/</link>
-      <pubDate>Tue, 27 Apr 2021 16:23:26 +0800</pubDate>
-      
-      <guid>https://leetomlee123.github.io/post/first_chapter/</guid>
-      <description>java程序http通过vpn访问不通 通过vpn访问其他公司的内网资源 使用vpn postman 访问接口可以通 但是java代码里面http访问不通 需要加上java程序启动参数-Djava.net.preferIPv4Stack=true</description>
     </item>
     
   </channel>

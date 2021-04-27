@@ -78,6 +78,29 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="https://leetomlee123.github.io/post/docker_log/" title="docker中日志大小问题">docker中日志大小问题</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2021年4月27日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D'>杂技浅尝</a></span>
+            
+        </div>
+        
+        <div class="post-content">
+            服务器磁盘占用接近100%排查 df -h 查看磁盘使用情况 du -h --max-depth=1 / 进一步查看不同文件系统下面的空间使用情况，并通过sort排序，并且只查看前10个数据 ![/images/image-20210427164442140.png) 发现是docker内服务日志没有做出限制 占用大量服务器磁盘 1 2 3 4 5 6 7 # vim /etc/docker/daemon.json { &#34;registry-mirrors&#34;: [&#34;http://f613ce8f.m.daocloud.io&#34;], &#34;log-driver&#34;:&#34;json-file&#34;, &#34;log-opts&#34;: {&#34;max-size&#34;:&#34;500m&#34;, &#34;max-file&#34;:&#34;3&#34;} } max-size=500m，意味着一个容器……
+        </div>
+        <p class="readmore"><a href="https://leetomlee123.github.io/post/docker_log/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="https://leetomlee123.github.io/post/first_chapter/" title="java程序使用vpn">java程序使用vpn</a>
             </h1>
         </header>
@@ -156,6 +179,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://leetomlee123.github.io/post/docker_log/" title="docker中日志大小问题">docker中日志大小问题</a>
+    </li>
+    
+    <li>
         <a href="https://leetomlee123.github.io/post/first_chapter/" title="java程序使用vpn">java程序使用vpn</a>
     </li>
     
@@ -168,7 +195,7 @@
         <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
 <ul class="widget-list">
     
-    <li><a href="https://leetomlee123.github.io/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/">杂技浅尝 (1)</a></li>
+    <li><a href="https://leetomlee123.github.io/categories/%E6%9D%82%E6%8A%80%E6%B5%85%E5%B0%9D/">杂技浅尝 (2)</a></li>
     
 </ul>
     </section>
@@ -176,6 +203,8 @@
     <section class="widget">
         <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
 <div class="tagcloud">
+    
+    <a href="https://leetomlee123.github.io/tags/docker/">docker</a>
     
     <a href="https://leetomlee123.github.io/tags/java/">java</a>
     

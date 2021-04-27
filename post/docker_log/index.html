@@ -9,20 +9,20 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     
 
-    <title>java程序使用vpn | mindLee`s blog</title>
-    <meta property="og:title" content="java程序使用vpn - mindLee`s blog">
+    <title>docker中日志大小问题 | mindLee`s blog</title>
+    <meta property="og:title" content="docker中日志大小问题 - mindLee`s blog">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2021-04-27T16:23:26&#43;08:00'>
+    <meta property="article:published_time" content='2021-04-27T16:38:36&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2021-04-27T16:23:26&#43;08:00'>
+    <meta property="article:modified_time" content='2021-04-27T16:38:36&#43;08:00'>
         
     <meta name="Keywords" content="golang,go语言,go语言笔记,夜月,java,android,博客,项目管理,python,软件架构,公众号,小程序">
-    <meta name="description" content="java程序使用vpn">
+    <meta name="description" content="docker中日志大小问题">
         
     <meta name="author" content="夜月">
-    <meta property="og:url" content="https://leetomlee123.github.io/post/first_chapter/">
+    <meta property="og:url" content="https://leetomlee123.github.io/post/docker_log/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -145,7 +145,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#通过vpn访问其他公司的内网资源-使用vpn-postman-访问接口可以通-但是java代码里面http访问不通">通过vpn访问其他公司的内网资源 使用vpn postman 访问接口可以通 但是java代码里面http访问不通</a></li>
+        <li><a href="#df--h-查看磁盘使用情况"><code>df -h</code> 查看磁盘使用情况</a></li>
       </ul>
     </li>
   </ul>
@@ -181,7 +181,7 @@
 </script>
     <article class="post">
         <header>
-            <h1 class="post-title">java程序使用vpn</h1>
+            <h1 class="post-title">docker中日志大小问题</h1>
         </header>
         <date class="post-meta meta-date">
             2021年4月27日
@@ -202,20 +202,56 @@
         
         
         <div class="post-content">
-            <h1 id="java程序http通过vpn访问不通">java程序http通过vpn访问不通</h1>
-<h3 id="通过vpn访问其他公司的内网资源-使用vpn-postman-访问接口可以通-但是java代码里面http访问不通">通过vpn访问其他公司的内网资源 使用vpn postman 访问接口可以通 但是java代码里面http访问不通</h3>
-<p>需要加上java程序启动参数<code>-Djava.net.preferIPv4Stack=true</code></p>
+            <h1 id="服务器磁盘占用接近100排查">服务器磁盘占用接近100%排查</h1>
+<h3 id="df--h-查看磁盘使用情况"><code>df -h</code> 查看磁盘使用情况</h3>
 <p>
-        <img class="mx-auto" alt="image-20210427153753866" src="/images/image-20210427153753866.png" />   
+        <img class="mx-auto" alt="image-20210427164244565" src="/images/image-20210427164244565.png" />   
     </p>
+<p><code>du -h --max-depth=1 /</code> 进一步查看不同文件系统下面的空间使用情况，并通过sort排序，并且只查看前10个数据</p>
+<p>![/images/image-20210427164442140.png)</p>
+<p>发现是docker内服务日志没有做出限制 占用大量服务器磁盘</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#998;font-style:italic"># vim /etc/docker/daemon.json</span>
 
+<span style="color:#000;font-weight:bold">{</span>
+  <span style="color:#d14">&#34;registry-mirrors&#34;</span>: <span style="color:#000;font-weight:bold">[</span><span style="color:#d14">&#34;http://f613ce8f.m.daocloud.io&#34;</span><span style="color:#000;font-weight:bold">]</span>,
+  <span style="color:#d14">&#34;log-driver&#34;</span>:<span style="color:#d14">&#34;json-file&#34;</span>,
+  <span style="color:#d14">&#34;log-opts&#34;</span>: <span style="color:#000;font-weight:bold">{</span><span style="color:#d14">&#34;max-size&#34;</span>:<span style="color:#d14">&#34;500m&#34;</span>, <span style="color:#d14">&#34;max-file&#34;</span>:<span style="color:#d14">&#34;3&#34;</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>max-size=500m，意味着一个容器日志大小上限是500M，</p>
+<p>max-file=3，意味着一个容器有三个日志，分别是id+.json、id+1.json、id+2.json</p>
+<p>注：设置后只对新添加的容器有效。</p>
+<p>重启docker守护进程</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">systemctl daemon-reload
+systemctl restart docker
+</code></pre></td></tr></table>
+</div>
+</div>
         </div>
 
         
 <div class="post-archive">
     <ul class="post-copyright">
         <li><strong>原文作者：</strong><a rel="author" href="https://leetomlee123.github.io">夜月</a></li>
-        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://leetomlee123.github.io/post/first_chapter/">https://leetomlee123.github.io/post/first_chapter/</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://leetomlee123.github.io/post/docker_log/">https://leetomlee123.github.io/post/docker_log/</a></li>
         <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
     </ul>
 </div>
@@ -225,12 +261,21 @@
 
         
 
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/first_chapter/">java程序使用vpn</a></li>
+        
+    </ul>
+</div>
+
 
         <div class="post-meta meta-tags">
             
             <ul class="clearfix">
                 
-                <li><a href='/tags/java'>java</a></li>
+                <li><a href='/tags/docker'>docker</a></li>
                 
             </ul>
             
