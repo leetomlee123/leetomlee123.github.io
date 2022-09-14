@@ -1,52 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html><head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-    
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ts70">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>ts70</title>
+  <link rel="manifest" href="manifest.json">
+
   <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?f0ec599a9d986bb89de8916621898085";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-  <script type="module" crossorigin src="/assets/index.e8cb7e08.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/_@babel_runtime@7.18.9@@babel.f27e29b7.js">
-  <link rel="modulepreload" crossorigin href="/assets/_resize-observer-polyfill@1.5.1@resize-observer-polyfill.069db9bc.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@vue_shared@3.2.37@@vue.1f15685f.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@vue_reactivity@3.2.37@@vue.f361355a.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@vue_runtime-core@3.2.37@@vue.14a2a806.js">
-  <link rel="modulepreload" crossorigin href="/assets/_vue-types@3.0.2@vue-types.ff7ca497.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@vue_runtime-dom@3.2.37@@vue.c2295e1b.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@ant-design_icons-svg@4.2.1@@ant-design.67722e5c.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@ctrl_tinycolor@3.4.1@@ctrl.fb3199b4.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@ant-design_colors@6.0.0@@ant-design.f63ed091.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@ant-design_icons-vue@6.1.0@@ant-design.6901be0f.js">
-  <link rel="modulepreload" crossorigin href="/assets/_dom-align@1.12.3@dom-align.30a680d1.js">
-  <link rel="modulepreload" crossorigin href="/assets/_lodash-es@4.17.21@lodash-es.8abcf8d3.js">
-  <link rel="modulepreload" crossorigin href="/assets/_dayjs@1.11.4@dayjs.13f891c0.js">
-  <link rel="modulepreload" crossorigin href="/assets/_async-validator@4.2.5@async-validator.b8d521e8.js">
-  <link rel="modulepreload" crossorigin href="/assets/_compute-scroll-into-view@1.0.17@compute-scroll-into-view.78a38d38.js">
-  <link rel="modulepreload" crossorigin href="/assets/_scroll-into-view-if-needed@2.2.29@scroll-into-view-if-needed.d1b0cd52.js">
-  <link rel="modulepreload" crossorigin href="/assets/_ant-design-vue@3.2.10@ant-design-vue.acfca1e2.js">
-  <link rel="modulepreload" crossorigin href="/assets/_vue-router@4.1.3@vue-router.31ba7b38.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@vue_devtools-api@6.2.1@@vue.8ef49068.js">
-  <link rel="modulepreload" crossorigin href="/assets/_vuex@4.0.2@vuex.f5f6627b.js">
-  <link rel="modulepreload" crossorigin href="/assets/_vue@3.2.37@vue.f46dd202.js">
-  <link rel="modulepreload" crossorigin href="/assets/_@ts-pro_vue-eternal-loading@1.2.0@@ts-pro.ea75f56e.js">
-  <link rel="stylesheet" href="/assets/_ant-design-vue@3.2.4e470214.css">
-  <link rel="stylesheet" href="/assets/index.c0922643.css">
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '456771501';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer=""></script>
+  <link rel="stylesheet" type="text/css" href="splash/style.css">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <script src="splash/splash.js"></script>
 </head>
+<body>  
 
-<body>
-  <div id="app" style="height: 100%;width:100%"> </div>
-  
-</body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
 
-</html>
+
+</body></html>
