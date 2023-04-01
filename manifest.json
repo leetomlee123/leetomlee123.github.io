@@ -1,6 +1,6 @@
 {
-    "name": "ts70",
-    "short_name": "ts70",
+    "name": "cursor",
+    "short_name": "cursor",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
