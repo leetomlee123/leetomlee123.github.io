@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>切瓜论坛</title>
-    <link>https://leetomlee123.github.io/</link>
+    <link>/</link>
     <description>Recent content on 切瓜论坛</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://leetomlee123.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
