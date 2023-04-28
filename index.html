@@ -2,62 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>赞赏</title>
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赞赏</title>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div>开发不易，请作者喝杯咖啡吧</div>
-        <div><img src="https://i.328888.xyz/2023/04/11/ipUnCZ.jpeg" alt="wechat_pay" class="love">
-        </div>
-        <div id="gitalk-container"></div>
+  <div class="container">
+    <div>开发不易，请作者喝杯咖啡吧</div>
+    <div><img src="https://i.328888.xyz/2023/04/11/ipUnCZ.jpeg" alt="wechat_pay" class="love">
     </div>
+    <div id="gitalk-container"></div>
+  </div>
 </body>
-    <script>
-        const gitalk = new Gitalk({
-  clientID: '37f26ffd324ac8d83157',
-  clientSecret: 'b615c45092539b05ab704d35b148577165162a82',
-  repo: 'GitHub repo',
-  owner: 'GitHub repo owner',
-  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
-  id: location.pathname,      // Ensure uniqueness and length less than 50
-  distractionFreeMode: false  // Facebook-like distraction free mode
-})
- 
-gitalk.render('gitalk-container')
-        
-        
-        
-    </script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '37f26ffd324ac8d83157',
+    clientSecret: 'b615c45092539b05ab704d35b148577165162a82',
+    repo: 'comment',
+    owner: 'leetomlee123',
+    admin: ['leetomlee123'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+
+
+</script>
 <style>
-    .love {
-        height: 250px;
-        width: 250px;
-        padding-top: 10px;
-    }
-    *{
-      margin: 0;
-      padding: 0; 
-    }
-    .container{
-      text-align: center;
-      padding-top: 180px;
-    }
+  .love {
+    height: 250px;
+    width: 250px;
+    padding-top: 10px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    text-align: center;
+    padding-top: 180px;
+  }
 </style>
 <script>
-    
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?6617e5b692101e3bc9750baeaa399d1b";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6617e5b692101e3bc9750baeaa399d1b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
 </script>
 
 </html>
