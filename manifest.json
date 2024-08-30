@@ -1,6 +1,6 @@
 {
-    "name": "v2ray_bird",
-    "short_name": "v2ray_bird",
+    "name": "flutter_colors",
+    "short_name": "flutter_colors",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
