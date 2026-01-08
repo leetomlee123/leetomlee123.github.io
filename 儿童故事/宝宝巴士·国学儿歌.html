@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>宝宝巴士·国学儿歌有声小说有声小说_演播:宝宝巴士_免费听书_听书楼</title>
+    <meta name="keywords" content="宝宝巴士·国学儿歌有声小说, 有声小说, 佚名, 宝宝巴士, ">
+    <meta name="description" content="　　点击前往宝宝巴士故事圈子，一起聊天一起玩点击收听更多好玩有趣的故事，还能学知识噢~国学唱出来，好听又好记！和奇奇妙妙一起唱国学儿歌——让宝宝快乐启蒙！国学唱出来，好听又好记！让宝贝在潜移默化中记住唐诗、宋词、汉乐府、三字经等国学经典，和奇奇妙妙一起唱国学儿歌，领略经典的魅力！*古诗词儿歌：有唐诗、宋词、汉乐府，从简单到复杂，从五言到七言，童音吟唱三遍+童音诵读一遍，让宝贝爱上古诗词！*三字经儿歌：奇奇和妙妙把《三字经》唱出来，非常适合低幼小朋友识记。小朋友不用刻意...宝宝巴士更多好故事推荐：1.猴子警长探案系列《猴子警长探案记第一季》《猴子警长探案记第二季》《猴子警长探案记第三季》2.安全好习惯系列《安全警长啦咘啦哆》《安全好习惯儿歌》3.世界科普-儿童启智系列《啦咘啦哆警长：世界宝藏》《十万个为什么》4.经典儿歌系列《宝宝巴士经典儿歌》《宝宝巴士中文儿歌》《宝宝巴士英文儿歌》5.聪明活泼小学生闹闹系列《别笑！这就是历史》《闹闹脑筋急转弯》《闹闹：爆笑闹翻天》《闹闹猜谜语》《我的同桌懂得多》《成语！别闹！》">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="zh-cn">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <link rel="stylesheet" href="https://res.wx.qq.com/t/wx_fed/weui-source/res/2.5.16/weui.min.css">
+    <script type="text/javascript" src="https://res.wx.qq.com/t/wx_fed/weui.js/res/1.2.21/weui.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", Arial, sans-serif; background: #fff; color: #000; line-height: 1.6; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 480px; background: #fff; padding: 0 20px 40px; border-left: 1px solid #eee; border-right: 1px solid #eee; min-height: 100vh; }
+        .header { background: #000; color: #fff; padding: 40px 20px; text-align: center; position: relative; margin: 0 -20px 20px; }
+        .header h1 { font-size: 24px; margin-bottom: 5px; font-weight: 300; letter-spacing: 4px; text-transform: uppercase; }
+        .header h1 a { color: #fff; text-decoration: none; }
+        .download-btn { position: absolute; top: 10px; right: 10px; background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 4px 12px; border-radius: 0; cursor: pointer; font-size: 11px; transition: all 0.3s; font-weight: 300; }
+        .download-btn:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+        .search-box { margin: 30px 0; text-align: center; }
+        .search-box input[type="text"] { width: 75%; padding: 12px; border: 1px solid #000; border-radius: 0; font-size: 13px; outline: none; }
+        .search-box button { padding: 12px 20px; background: #000; color: #fff; border: 1px solid #000; border-radius: 0; cursor: pointer; font-size: 13px; transition: all 0.2s; border-left: none; }
+        .search-box button:hover { background: #333; }
+        .breadcrumb { padding: 15px 0; color: #999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+        .breadcrumb a { color: #666; text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s; }
+        .breadcrumb a:hover { color: #000; border-bottom: 1px solid #000; }
+        .book-container { margin: 20px 0; padding-bottom: 30px; border-bottom: 1px solid #f0f0f0; }
+        .book-main { display: flex; gap: 20px; align-items: flex-start; }
+        .book-cover { flex-shrink: 0; }
+        .book-cover img { width: 100px; height: 100px; border-radius: 0; border: 1px solid #f0f0f0; object-fit: cover; }
+        .book-info { flex: 1; }
+        .book-title { font-size: 18px; font-weight: 400; margin-bottom: 12px; color: #000; letter-spacing: 0.5px; line-height: 1.3; }
+        .status-badge { display: inline-block; padding: 2px 6px; background: #fafafa; color: #666; border: 1px solid #eee; border-radius: 0; font-size: 10px; margin-bottom: 8px; font-weight: 300; }
+        .book-meta { margin: 4px 0; color: #888; font-size: 12px; font-weight: 300; }
+        .book-meta span { color: #444; margin-right: 5px; }
+        .book-meta a { color: #000; text-decoration: none; border-bottom: 1px solid #eee; }
+        .book-meta a:hover { border-bottom: 1px solid #000; }
+        .action-buttons { margin-top: 25px; display: flex; gap: 10px; }
+        .btn { flex: 1; text-align: center; padding: 10px 0; border-radius: 0; text-decoration: none; font-size: 12px; font-weight: 300; transition: all 0.3s; border: 1px solid #000; }
+        .btn-primary { background: #000; color: #fff; }
+        .btn-primary:hover { background: #333; }
+        .btn-secondary, .btn-danger { background: #fff; color: #000; border-color: #eee; }
+        .btn-secondary:hover, .btn-danger:hover { border-color: #000; }
+        .section { margin: 30px 0; }
+        .section-title { font-size: 14px; font-weight: 400; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 1px solid #000; letter-spacing: 2px; text-transform: uppercase; }
+        .tags-container { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+        .tags { font-size: 10px; padding: 4px 10px; color: #666; text-decoration: none; border: 1px solid #f0f0f0; background: #fafafa; transition: all 0.2s; }
+        .tags:hover { color: #000; border-color: #000; background: #fff; }
+        .description { color: #666; line-height: 1.8; font-size: 13px; font-weight: 300; text-align: justify; }
+        .playlist { list-style: none; }
+        .playlist li { padding: 15px 0; border-bottom: 1px solid #f8f8f8; display: flex; justify-content: space-between; align-items: center; }
+        .playlist li:last-child { border-bottom: none; }
+        .playlist li a { color: #333; text-decoration: none; font-size: 13px; font-weight: 300; flex: 1; }
+        .playlist li a:hover { color: #000; }
+        .playlist-idx { font-size: 12px; color: #ccc; margin-right: 15px; font-family: monospace; width: 25px; }
+        .playlist-date { font-size: 11px; color: #bbb; font-weight: 300; }
+        .playlist-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 15px; }
+        .dirurl { color: #999; font-size: 11px; text-decoration: none; font-weight: 300; border-bottom: 1px solid transparent; }
+        .dirurl:hover { color: #000; border-bottom: 1px solid #000; }
+        #audio-player-container { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: #fff; padding: 15px; border: 1px solid #000; z-index: 1000; display: none; }
+        #audio-player { width: 100%; height: 35px; }
+        #loading-indicator { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #000; color: #fff; padding: 15px 30px; font-size: 12px; z-index: 2000; display: none; font-weight: 300; letter-spacing: 1px; }
+        .footer { text-align: center; padding: 40px 0; color: #bbb; font-size: 10px; border-top: 1px solid #f0f0f0; font-weight: 300; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="download-btn" id="showQRBtn">APP</button>
+            <h1><a href="https://reader.colors.nyc.mn/">听书楼</a></h1>
+            <p style="font-size: 11px; opacity: 0.6; letter-spacing: 2px; text-transform: uppercase;">Audiobook Collection</p>
+        </div>
+
+        <div class="search-box">
+            <form action="https://www.bing.com/search" method="get" onsubmit="this.q.value='site:reader.colors.nyc.mn ' + this.keyword.value;">
+                <input type="hidden" name="q" value="site:reader.colors.nyc.mn">
+                <input type="text" name="keyword" placeholder="Search..." />
+                <button type="submit">GO</button>
+            </form>
+        </div>
+
+        <div class="breadcrumb">
+            <a href="https://reader.colors.nyc.mn/">HOME</a> / 
+            <a href='https://reader.colors.nyc.mn/儿童故事'>儿童故事</a> / 
+            宝宝巴士·国学儿歌有声小说
+        </div>
+
+        <div class="book-container">
+            <div class="book-main">
+                <div class="book-cover">
+                    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/45aa884f81c3334a5dd4978d3f5df736.gif" alt="Cover">
+                </div>
+                <div class="book-info">
+                    <div class="status-badge">完结</div>
+                    <div class="book-title">宝宝巴士·国学儿歌有声小说</div>
+                    <div class="book-meta"><span>Author</span><a href="#">佚名</a></div>
+                    <div class="book-meta"><span>Narrator</span><a href="#">宝宝巴士</a></div>
+                    <div class="book-meta"><span>Update</span>2025-05-29 12:18</div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="#playlist" class="btn btn-primary">LISTEN</a>
+                <a href="#" class="btn btn-secondary">SAVE</a>
+                <a href="#" class="btn btn-danger">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Description</div>
+            <div class="tags-container">
+                
+            </div>
+            <div class="description">　　点击前往宝宝巴士故事圈子，一起聊天一起玩点击收听更多好玩有趣的故事，还能学知识噢~国学唱出来，好听又好记！和奇奇妙妙一起唱国学儿歌——让宝宝快乐启蒙！国学唱出来，好听又好记！让宝贝在潜移默化中记住唐诗、宋词、汉乐府、三字经等国学经典，和奇奇妙妙一起唱国学儿歌，领略经典的魅力！*古诗词儿歌：有唐诗、宋词、汉乐府，从简单到复杂，从五言到七言，童音吟唱三遍+童音诵读一遍，让宝贝爱上古诗词！*三字经儿歌：奇奇和妙妙把《三字经》唱出来，非常适合低幼小朋友识记。小朋友不用刻意...宝宝巴士更多好故事推荐：1.猴子警长探案系列《猴子警长探案记第一季》《猴子警长探案记第二季》《猴子警长探案记第三季》2.安全好习惯系列《安全警长啦咘啦哆》《安全好习惯儿歌》3.世界科普-儿童启智系列《啦咘啦哆警长：世界宝藏》《十万个为什么》4.经典儿歌系列《宝宝巴士经典儿歌》《宝宝巴士中文儿歌》《宝宝巴士英文儿歌》5.聪明活泼小学生闹闹系列《别笑！这就是历史》《闹闹脑筋急转弯》《闹闹：爆笑闹翻天》《闹闹猜谜语》《我的同桌懂得多》《成语！别闹！》</div>
+        </div>
+
+        <div class="section" id="playlist">
+            <div class="playlist-header">
+                <div class="section-title" style="margin: 0; border: none;">Chapters</div>
+                <a href="#" class="dirurl">VIEW ALL</a>
+            </div>
+            <ul class="playlist">
+                <li><span class="playlist-idx">01</span><a href="22616_1_258165.html" title="宝宝巴士·国学儿歌有声小说 有它上幼儿园不用愁_宝宝巴士点读笔">有它上幼儿园不用愁_宝宝巴士点读笔</a><span class="playlist-date">2025-05-29</span></li><li><span class="playlist-idx">02</span><a href="22616_1_258164.html" title="宝宝巴士·国学儿歌有声小说 一支笔解决所有小麻烦_宝宝巴士点读笔">一支笔解决所有小麻烦_宝宝巴士点读笔</a><span class="playlist-date">2025-05-29</span></li><li><span class="playlist-idx">03</span><a href="22616_1_258163.html" title="宝宝巴士·国学儿歌有声小说 启蒙到底用什么好_宝宝巴士点读笔">启蒙到底用什么好_宝宝巴士点读笔</a><span class="playlist-date">2025-05-29</span></li><li><span class="playlist-idx">04</span><a href="22616_1_258162.html" title="宝宝巴士·国学儿歌有声小说 今天我是小老师_宝宝巴士点读笔">今天我是小老师_宝宝巴士点读笔</a><span class="playlist-date">2025-05-29</span></li><li><span class="playlist-idx">05</span><a href="22616_1_258161.html" title="宝宝巴士·国学儿歌有声小说 解放妈妈大作战_宝宝巴士点读">解放妈妈大作战_宝宝巴士点读</a><span class="playlist-date">2025-05-29</span></li><li><span class="playlist-idx">06</span><a href="22616_1_258160.html" title="宝宝巴士·国学儿歌有声小说 点一点孩子的童年好伙伴">点一点孩子的童年好伙伴</a><span class="playlist-date">2025-05-29</span></li><li><span class="playlist-idx">07</span><a href="22616_1_223084.html" title="宝宝巴士·国学儿歌有声小说 小鸡国学之《古诗叽叽叽》12月21日上线!神奇古诗游学开始咯">小鸡国学之《古诗叽叽叽》12月21日上线!神奇古诗游学开始咯</a><span class="playlist-date">2024-06-01</span></li><li><span class="playlist-idx">08</span><a href="22616_1_203007.html" title="宝宝巴士·国学儿歌有声小说 小鸡国学《历史叽叽叽》11月23日首发!订阅专辑收听">小鸡国学《历史叽叽叽》11月23日首发!订阅专辑收听</a><span class="playlist-date">2023-11-22</span></li><li><span class="playlist-idx">09</span><a href="22616_1_188376.html" title="宝宝巴士·国学儿歌有声小说 《大林寺桃花》唐·白居易">《大林寺桃花》唐·白居易</a><span class="playlist-date">2023-06-23</span></li><li><span class="playlist-idx">10</span><a href="22616_1_188284.html" title="宝宝巴士·国学儿歌有声小说 《墨梅》宋·朱熹">《墨梅》宋·朱熹</a><span class="playlist-date">2023-06-21</span></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 TS楼. ALL RIGHTS RESERVED.</p>
+            <p style="margin-top: 8px;">CONTENT SOURCE: INTERNET. FOR DEMO ONLY.</p>
+        </div>
+    </div>
+
+    <div id="audio-player-container">
+        <audio id="audio-player" controls>您的浏览器不支持 audio 标签。</audio>
+    </div>
+    
+    <div id="loading-indicator">正在加载音频...</div>
+
+    <script>
+    document.querySelectorAll(".playlist a").forEach(a => {
+        a.addEventListener("click", function(e) {
+            e.preventDefault();
+            // Show QR code dialog instead of playing audio
+            weui.dialog({
+                title: '下载APP免费收听',
+                content: '<div style="text-align: center; padding: 20px;"><img src="https://files.colors.nyc.mn/api/public/dl/E0IZjwmX?inline=true" style="width: 200px; height: auto; border-radius: 8px;"></div>',
+                className: 'qr-dialog',
+                buttons: [{
+                    label: '关闭',
+                    type: 'primary',
+                    onClick: function() {}
+                }]
+            });
+        });
+    });
+
+    // QR Code Dialog
+    document.getElementById('showQRBtn').addEventListener('click', function() {
+        weui.dialog({
+            title: '下载APP免费收听',
+            content: '<div style="text-align: center; padding: 20px;"><img src="https://files.colors.nyc.mn/api/public/dl/E0IZjwmX?inline=true" style="width: 200px; height: auto; border-radius: 8px;"></div>',
+            className: 'qr-dialog',
+            buttons: [{
+                label: '关闭',
+                type: 'primary',
+                onClick: function() {}
+            }]
+        });
+    });
+
+    // Anti-debugging protection
+    (function() {
+        function debuggerProtection() {
+            const temp = function(){};
+            temp.toString = function() {
+                debugger;
+                return '';
+            };
+            console.log('%c', temp);
+        }
+        setInterval(debuggerProtection, 1000);
+    })();
+    </script>
+</body>
+</html>

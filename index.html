@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>有声小说大全_免费听书 - 听书楼</title>
+    <meta name="keywords" content="百家讲坛, 人物传记, 儿童故事, 其他有声, 军事历史, 官场商战, 灵异惊悚, 玄幻修真, 相声戏曲, 科幻, 听书楼, 有声小说, 免费听书">
+    <meta name="description" content="听书楼 - 专业的免费有声小说网站。提供海量高质量有声作品在线收听。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://res.wx.qq.com/t/wx_fed/weui-source/res/2.5.16/weui.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", Arial, sans-serif; background: #fff; color: #000; line-height: 1.6; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 480px; background: #fff; padding: 0 20px 40px; border-left: 1px solid #eee; border-right: 1px solid #eee; min-height: 100vh; }
+        .header { background: #000; color: #fff; padding: 40px 20px; text-align: center; position: relative; margin: 0 -20px 20px; }
+        .header h1 { font-size: 24px; margin-bottom: 5px; font-weight: 300; letter-spacing: 4px; text-transform: uppercase; }
+        .header h1 a { color: #fff; text-decoration: none; }
+        .breadcrumb { padding: 15px 0; color: #999; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+        .breadcrumb a { color: #666; text-decoration: none; border-bottom: 1px solid transparent; transition: all 0.2s; }
+        .breadcrumb a:hover { color: #000; border-bottom: 1px solid #000; }
+        .section-title { font-size: 14px; font-weight: 400; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 1px solid #000; letter-spacing: 2px; text-transform: uppercase; }
+        
+        .list-container { list-style: none; }
+        .list-item { padding: 15px 0; border-bottom: 1px solid #f8f8f8; display: flex; align-items: center; gap: 15px; transition: all 0.2s; }
+        .list-item:hover { background: #fafafa; }
+        .list-item:last-child { border-bottom: none; }
+        
+        .book-cover { width: 55px; height: 55px; flex-shrink: 0; object-fit: cover; border: 1px solid #eee; }
+        .item-info { flex: 1; }
+        .item-title { color: #333; text-decoration: none; font-size: 14px; font-weight: 400; display: block; }
+        .item-title:hover { color: #000; }
+        
+        .cate-icon { width: 55px; height: 55px; background: #fcfcfc; border: 1px solid #eee; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #ccc; }
+        
+        .pagination { margin-top: 30px; display: flex; justify-content: center; gap: 10px; align-items: center; }
+        .page-link { padding: 8px 16px; border: 1px solid #000; color: #000; text-decoration: none; font-size: 12px; font-weight: 300; transition: all 0.2s; }
+        .page-link:hover { background: #000; color: #fff; }
+        .page-info { font-size: 12px; color: #999; font-weight: 300; }
+        .page-disabled { padding: 8px 16px; border: 1px solid #eee; color: #ccc; font-size: 12px; cursor: not-allowed; }
+
+        .search-box { margin: 30px 0; text-align: center; }
+        .search-box input[type="text"] { width: 75%; padding: 12px; border: 1px solid #000; border-radius: 0; font-size: 13px; outline: none; }
+        .search-box button { padding: 12px 20px; background: #000; color: #fff; border: 1px solid #000; border-radius: 0; cursor: pointer; font-size: 13px; transition: all 0.2s; border-left: none; }
+        .search-box button:hover { background: #333; }
+        
+        .playlist-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 15px; border-bottom: 1px solid #000; padding-bottom: 8px; }
+        .dirurl { color: #999; font-size: 11px; text-decoration: none; font-weight: 300; border-bottom: 1px solid transparent; text-transform: uppercase; letter-spacing: 1px; }
+        .dirurl:hover { color: #000; border-bottom: 1px solid #000; }
+
+        .footer { text-align: center; padding: 40px 0; color: #bbb; font-size: 10px; border-top: 1px solid #f0f0f0; font-weight: 300; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><a href="https://reader.colors.nyc.mn/">听书楼</a></h1>
+            <p style="font-size: 11px; opacity: 0.6; letter-spacing: 2px; text-transform: uppercase;">Audiobook Collection</p>
+        </header>
+
+        
+<div class="search-box">
+    <form action="https://www.bing.com/search" method="get" onsubmit="this.q.value='site:reader.colors.nyc.mn ' + this.keyword.value;">
+        <input type="hidden" name="q" value="site:reader.colors.nyc.mn">
+        <input type="text" name="keyword" placeholder="Search..." />
+        <button type="submit">GO</button>
+    </form>
+</div>
+
+
+        <nav class="breadcrumb">
+            <a href="https://reader.colors.nyc.mn/">HOME</a> 
+        </nav>
+
+        <main class="content-area">
+            
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">人物传记</h2>
+        <a href="https://reader.colors.nyc.mn/人物传记/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/1705/张居正第2卷水龙吟.gif" class="book-cover" alt="张居正第2卷水龙吟有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/人物传记/张居正第2卷水龙吟.html" class="item-title">张居正第2卷水龙吟有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/6c79e180f418e1f468040ad8f6b9818f.gif" class="book-cover" alt="华罗庚有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/人物传记/华罗庚.html" class="item-title">华罗庚有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/6a8592b274f66f771a23071e24c0e460.gif" class="book-cover" alt="揭秘特朗普惊人内幕有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/人物传记/揭秘特朗普惊人内幕.html" class="item-title">揭秘特朗普惊人内幕有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/a697dc98356bfd390992536930f9db41.gif" class="book-cover" alt="李鸿章为人处世大智慧有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/人物传记/李鸿章为人处世大智慧.html" class="item-title">李鸿章为人处世大智慧有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/60ad43b3987f8a896afd166b5fa94e2b.gif" class="book-cover" alt="普金大传有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/人物传记/普金大传.html" class="item-title">普金大传有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">儿童故事</h2>
+        <a href="https://reader.colors.nyc.mn/儿童故事/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/763749be68510ae0c1071d31e97d38c7.gif" class="book-cover" alt="小伶情景剧有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/儿童故事/小伶情景剧.html" class="item-title">小伶情景剧有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/1e3964fcdc8d0248efff30c9c25b3f74.gif" class="book-cover" alt="魔卷归来：山海经奇幻世界大冒险有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/儿童故事/魔卷归来：山海经奇幻世界大冒险.html" class="item-title">魔卷归来：山海经奇幻世界大冒险有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/bb1c02ad7345c97b3206100055c9a6b6.gif" class="book-cover" alt="小葫芦故事剧场有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/儿童故事/小葫芦故事剧场.html" class="item-title">小葫芦故事剧场有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/7f2be26710702f2d29b9bf1733b8558d.gif" class="book-cover" alt="米朵朵上学记·一二三年级有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/儿童故事/米朵朵上学记·一二三年级.html" class="item-title">米朵朵上学记·一二三年级有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/4f0432b05dbf66112652c105ead11a59.gif" class="book-cover" alt="爆笑父与子：今天我当家有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/儿童故事/爆笑父与子：今天我当家.html" class="item-title">爆笑父与子：今天我当家有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">其他有声</h2>
+        <a href="https://reader.colors.nyc.mn/其他有声/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=http://image.ting13.cc/img/52/fe/cb/1.jpg" class="book-cover" alt="莎士比亚戏剧故事有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/其他有声/莎士比亚戏剧故事.html" class="item-title">莎士比亚戏剧故事有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=http://image.ting13.cc/img/52/fe/cb/6.jpg" class="book-cover" alt="精进 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/其他有声/精进_如何成为一个很厉害的人.html" class="item-title">精进</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/5f97ebe6a506ab218c9898dceb1e3e93.gif" class="book-cover" alt="任枫故事会有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/其他有声/任枫故事会.html" class="item-title">任枫故事会有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/cb1af54cb9671bf00089b57ea6e2a68d.gif" class="book-cover" alt="鱼声有你有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/其他有声/鱼声有你.html" class="item-title">鱼声有你有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/6302/导游小姐.gif" class="book-cover" alt="导游小姐有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/其他有声/导游小姐.html" class="item-title">导游小姐有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">军事历史</h2>
+        <a href="https://reader.colors.nyc.mn/军事历史/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/476bf82b786226417c3e29879b26e6c3.gif" class="book-cover" alt="胖妞逆袭打脸有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/军事历史/胖妞逆袭打脸.html" class="item-title">胖妞逆袭打脸有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/cover/yousheng/借枪.gif" class="book-cover" alt="借枪有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/军事历史/借枪.html" class="item-title">借枪有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/83f9d9ed28a4bbd7291dbbbb81c78c3e.gif" class="book-cover" alt="特工：发配后勤，敌我双方都疯了有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/军事历史/特工：发配后勤，敌我双方都疯了.html" class="item-title">特工：发配后勤，敌我双方都疯了有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/c655df7ece60495486d66a87d8fd721a.gif" class="book-cover" alt="神医嫡女有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/军事历史/神医嫡女.html" class="item-title">神医嫡女有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/f122d1c9f0bd92facec16ec999eeb24c.gif" class="book-cover" alt="奋斗在苏俄有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/军事历史/奋斗在苏俄.html" class="item-title">奋斗在苏俄有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">官场商战</h2>
+        <a href="https://reader.colors.nyc.mn/官场商战/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/cover/yousheng/2021/0813/6f1a0dd0900c45ec3ee3ffefd062b478.gif" class="book-cover" alt="伟大的励志书有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/官场商战/伟大的励志书.html" class="item-title">伟大的励志书有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/cover/yousheng/二号首长第三部.gif" class="book-cover" alt="二号首长第三部有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/官场商战/二号首长第三部.html" class="item-title">二号首长第三部有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/c146adda214fe1fee679e8bdde9bb592.gif" class="book-cover" alt="文明破晓有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/官场商战/文明破晓.html" class="item-title">文明破晓有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=http://image.ting13.cc/img/52/fe/cb/8.jpg" class="book-cover" alt="权路巅峰有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/官场商战/权路巅峰.html" class="item-title">权路巅峰有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/43d78ffb650adbf7c18f0bb0648da6f5.gif" class="book-cover" alt="今朝阳和启蛰有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/官场商战/今朝阳和启蛰.html" class="item-title">今朝阳和启蛰有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">灵异惊悚</h2>
+        <a href="https://reader.colors.nyc.mn/灵异惊悚/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/01cc2dc18b62e231c99610bcae6972ff.gif" class="book-cover" alt="猫眼鬼瞳有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/灵异惊悚/猫眼鬼瞳.html" class="item-title">猫眼鬼瞳有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/816b0396cbcfe9ac0d9a9f8efbd9a901.gif" class="book-cover" alt="地狱神探有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/灵异惊悚/地狱神探.html" class="item-title">地狱神探有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/04d2bf4edc3da3aa2cd588e4a7b4c87f.gif" class="book-cover" alt="深夜列车有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/灵异惊悚/深夜列车.html" class="item-title">深夜列车有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/38ea9010f4f7a9be1c6b21102c9861b0.gif" class="book-cover" alt="阳间道士笔记有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/灵异惊悚/阳间道士笔记.html" class="item-title">阳间道士笔记有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/7051/楼晓玉鬼故事集锦.gif" class="book-cover" alt="楼晓玉鬼故事集锦有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/灵异惊悚/楼晓玉鬼故事集锦.html" class="item-title">楼晓玉鬼故事集锦有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">玄幻修真</h2>
+        <a href="https://reader.colors.nyc.mn/玄幻修真/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/b9acc1d948900c572e871385703f1b1f.gif" class="book-cover" alt="修仙从时间管理开始有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/玄幻修真/修仙从时间管理开始.html" class="item-title">修仙从时间管理开始有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/35912ee5302dd0464b4fcd66dc0af0a5.gif" class="book-cover" alt="绝世道尊有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/玄幻修真/绝世道尊.html" class="item-title">绝世道尊有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/熊猫好贱.gif" class="book-cover" alt="熊猫好贱有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/玄幻修真/熊猫好贱.html" class="item-title">熊猫好贱有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/cover/yousheng/诸天我为王.gif" class="book-cover" alt="诸天我为王有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/玄幻修真/诸天我为王.html" class="item-title">诸天我为王有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/b99e05de30eb0ba04a9af06ccbfa75e4.gif" class="book-cover" alt="我的微信通龙宫有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/玄幻修真/我的微信通龙宫.html" class="item-title">我的微信通龙宫有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">百家讲坛</h2>
+        <a href="https://reader.colors.nyc.mn/百家讲坛/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/61314037691e0e1ba27c0fb7d130c116.gif" class="book-cover" alt="诡局有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/百家讲坛/诡局.html" class="item-title">诡局有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/a956dc669dc136fedae89bc19cfa13f8.gif" class="book-cover" alt="中国时代有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/百家讲坛/中国时代.html" class="item-title">中国时代有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/41961cdd1c2b7c8ef111c46440cb7b1e.gif" class="book-cover" alt="莫等故人有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/百家讲坛/莫等故人.html" class="item-title">莫等故人有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/5668a6f5a73d4c2f7bc2e8fb9d1c75bf.gif" class="book-cover" alt="话说聊斋有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/百家讲坛/话说聊斋.html" class="item-title">话说聊斋有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/c73595cdd162ff4a9bfda59dc70a8cd8.gif" class="book-cover" alt="摸金奇闻录有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/百家讲坛/摸金奇闻录.html" class="item-title">摸金奇闻录有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">相声戏曲</h2>
+        <a href="https://reader.colors.nyc.mn/相声戏曲/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/09/6e/g3/越剧.jpg" class="book-cover" alt="梁山伯与祝英台(越剧)有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/相声戏曲/梁山伯与祝英台(越剧).html" class="item-title">梁山伯与祝英台(越剧)有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=http://image.ting13.cc/img/52/fe/cb/1.jpg" class="book-cover" alt="郭德纲对口相声精品专辑1有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/相声戏曲/郭德纲对口相声精品专辑1.html" class="item-title">郭德纲对口相声精品专辑1有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=http://image.ting13.cc/img/52/fe/cb/2.jpg" class="book-cover" alt="徐德亮王文林相声选集有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/相声戏曲/徐德亮王文林相声选集.html" class="item-title">徐德亮王文林相声选集有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/e8ae8f97d9ad3599b37dc5e7726bf8f3.gif" class="book-cover" alt="郭德纲于谦相声集有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/相声戏曲/郭德纲于谦相声集.html" class="item-title">郭德纲于谦相声集有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/3ca11aab76b6eedf2376fbd540e98ab9.gif" class="book-cover" alt="郭德纲历年相声2006有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/相声戏曲/郭德纲历年相声2006.html" class="item-title">郭德纲历年相声2006有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">科幻</h2>
+        <a href="https://reader.colors.nyc.mn/科幻/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/360/生人勿近.gif" class="book-cover" alt="生人勿近有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/科幻/生人勿近.html" class="item-title">生人勿近有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/452/捉尸道长.gif" class="book-cover" alt="捉尸道长有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/科幻/捉尸道长.html" class="item-title">捉尸道长有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/449/开棺有喜-冥夫求放过.gif" class="book-cover" alt="开棺有喜-冥夫求放过有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/科幻/开棺有喜-冥夫求放过.html" class="item-title">开棺有喜-冥夫求放过有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/435/接阴人.gif" class="book-cover" alt="接阴人有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/科幻/接阴人.html" class="item-title">接阴人有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/436/焚尸匠.gif" class="book-cover" alt="焚尸匠有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/科幻/焚尸匠.html" class="item-title">焚尸匠有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">经典纪实</h2>
+        <a href="https://reader.colors.nyc.mn/经典纪实/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/2077/赌城不是天堂.gif" class="book-cover" alt="赌城不是天堂有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/经典纪实/赌城不是天堂.html" class="item-title">赌城不是天堂有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/2604/铁嘴老梁说天下1.gif" class="book-cover" alt="铁嘴老梁说天下1有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/经典纪实/铁嘴老梁说天下1.html" class="item-title">铁嘴老梁说天下1有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/2196/聆听经典电影.gif" class="book-cover" alt="聆听经典电影有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/经典纪实/聆听经典电影.html" class="item-title">聆听经典电影有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/3939/曾经的江河.gif" class="book-cover" alt="曾经的江河有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/经典纪实/曾经的江河.html" class="item-title">曾经的江河有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/img/1352/一枕黄粱庄园梦.gif" class="book-cover" alt="一枕黄粱庄园梦有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/经典纪实/一枕黄粱庄园梦.html" class="item-title">一枕黄粱庄园梦有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">综艺娱乐</h2>
+        <a href="https://reader.colors.nyc.mn/综艺娱乐/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/a6c6cfc1c02231fa70fd897e5ee7bdc0.gif" class="book-cover" alt="极致放松音乐有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/综艺娱乐/极致放松音乐.html" class="item-title">极致放松音乐有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/bdfdfa224b93c00e685bc7ead45d3f73.gif" class="book-cover" alt="古诗词里的百科知识有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/综艺娱乐/古诗词里的百科知识.html" class="item-title">古诗词里的百科知识有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/89231d40a4c11631eeba813e47a5fddd.gif" class="book-cover" alt="脉轮的净化–自然环境，适合脉轮冥想，瑜伽的音乐有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/综艺娱乐/脉轮的净化–自然环境，适合脉轮冥想，瑜伽的音乐.html" class="item-title">脉轮的净化–自然环境，适合脉轮冥想，瑜伽的音乐有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/cc5a5a0c9ef7a7234faf90de13feab13.gif" class="book-cover" alt="沉浸式雨声催眠有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/综艺娱乐/沉浸式雨声催眠.html" class="item-title">沉浸式雨声催眠有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/d6e6b5edf9ef2b2b5e1a46e6210c0749.gif" class="book-cover" alt="末世狂徒有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/综艺娱乐/末世狂徒.html" class="item-title">末世狂徒有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">网游竞技</h2>
+        <a href="https://reader.colors.nyc.mn/网游竞技/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/4aeb20e83a7850ddc907ad3339682ff5.gif" class="book-cover" alt="我在末日文字游戏里救世有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/网游竞技/我在末日文字游戏里救世.html" class="item-title">我在末日文字游戏里救世有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/3da2bb62bbe5d46f7f0fe0411fd9a101.gif" class="book-cover" alt="NBA之天赋强到爆有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/网游竞技/NBA之天赋强到爆.html" class="item-title">NBA之天赋强到爆有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/43c17b0af2fab0a24373132f7ab50fc0.gif" class="book-cover" alt="快穿之生存游戏有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/网游竞技/快穿之生存游戏.html" class="item-title">快穿之生存游戏有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/35ef66fad79e554c2d7d264c341ac134.gif" class="book-cover" alt="全职召唤师系统有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/网游竞技/全职召唤师系统.html" class="item-title">全职召唤师系统有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/d23baf283967528a7e74fa7b59706128.gif" class="book-cover" alt="网游：我有万倍增幅有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/网游竞技/网游：我有万倍增幅.html" class="item-title">网游：我有万倍增幅有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">通俗文学</h2>
+        <a href="https://reader.colors.nyc.mn/通俗文学/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/21ee12bd0df4bd2686cafa09022641c6.gif" class="book-cover" alt="一千零一夜有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/通俗文学/一千零一夜.html" class="item-title">一千零一夜有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/32e2d2c21fd8a45a0519e4f42ba7307e.gif" class="book-cover" alt="了不起的盖茨比有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/通俗文学/了不起的盖茨比.html" class="item-title">了不起的盖茨比有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/c51fe8380f991d63d98eee6e1b2265bd.gif" class="book-cover" alt="卡拉马佐夫兄弟有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/通俗文学/卡拉马佐夫兄弟.html" class="item-title">卡拉马佐夫兄弟有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/fffffd4aa1e98f61276794efe43b47f2.gif" class="book-cover" alt="唐诗三百首-原文朗读有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/通俗文学/唐诗三百首-原文朗读.html" class="item-title">唐诗三百首-原文朗读有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/6527ff8640c886bf0776d56724dd3ea9.gif" class="book-cover" alt="人间须尽欢有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/通俗文学/人间须尽欢.html" class="item-title">人间须尽欢有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">都市言情</h2>
+        <a href="https://reader.colors.nyc.mn/都市言情/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/be9a72c70df3d79883c2bd3c2033880f.gif" class="book-cover" alt="恰似寒光遇骄阳有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/都市言情/恰似寒光遇骄阳.html" class="item-title">恰似寒光遇骄阳有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/213f3edbf99de124f8ead8948fdedc5e.gif" class="book-cover" alt="不如别离有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/都市言情/不如别离.html" class="item-title">不如别离有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/030f7e4809da3e540a94659a97913cbe.gif" class="book-cover" alt="离婚后，高冷女总裁后悔了有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/都市言情/离婚后，高冷女总裁后悔了.html" class="item-title">离婚后，高冷女总裁后悔了有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/95fe849389c5ee0c7f41c9f013c41f95.gif" class="book-cover" alt="萌宝神助攻：爹地我妈咪超甜有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/都市言情/萌宝神助攻：爹地我妈咪超甜.html" class="item-title">萌宝神助攻：爹地我妈咪超甜有声小说有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.itingshu.net/cover/yousheng/344a9958b4ac40f679d1223fc6d0e776.gif" class="book-cover" alt="嫡女重生，惹上暴君逃不掉有声小说有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/都市言情/嫡女重生，惹上暴君逃不掉.html" class="item-title">嫡女重生，惹上暴君逃不掉有声小说有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+<div class="section" style="margin-top: 30px;">
+    <div class="playlist-header">
+        <h2 class="section-title" style="margin: 0; border: none;">长篇评书</h2>
+        <a href="https://reader.colors.nyc.mn/长篇评书/" class="dirurl">MORE</a>
+    </div>
+    <ul class="list-container">
+        
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/cover/yousheng/2021/0429/620e433d08bf01bdae5c7067cc643b07.gif" class="book-cover" alt="评书说案评书有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/长篇评书/评书说案评书.html" class="item-title">评书说案评书有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=http://image.ting13.cc/cover/yousheng/2021/0415/龙城1949.gif" class="book-cover" alt="龙城1949评书有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/长篇评书/龙城1949评书.html" class="item-title">龙城1949评书有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=http://image.ting13.cc/cover/yousheng/2021/0414/烟雨红船.gif" class="book-cover" alt="烟雨红船评书有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/长篇评书/烟雨红船评书.html" class="item-title">烟雨红船评书有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/cover/yousheng/2021/0429/06f2b6a12794a06fdb5525238f751295.gif" class="book-cover" alt="三国演义(149回版)评书有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/长篇评书/三国演义(149回版)评书.html" class="item-title">三国演义(149回版)评书有声小说</a>
+    </div>
+</li>
+
+<li class="list-item">
+    <img src="https://api.colors.nyc.mn/img/proxy?url=https://image.ting13.cc/cover/yousheng/2021/0429/ae0ea516068a8f13af88e0963263b386.gif" class="book-cover" alt="约翰打赌评书有声小说 封面">
+    <div class="item-info">
+        <a href="https://reader.colors.nyc.mn/长篇评书/约翰打赌评书.html" class="item-title">约翰打赌评书有声小说</a>
+    </div>
+</li>
+
+    </ul>
+</div>
+
+        </main>
+
+        
+
+        <footer class="footer">
+            <p>© 2024 TS楼. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</body>
+</html>
