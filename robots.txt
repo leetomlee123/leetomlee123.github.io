@@ -1,7 +1,0 @@
-
-
-
-
-User-agent: *
-Allow: /
-Sitemap: https://blog.colors.nyc.mn/sitemap.xml
